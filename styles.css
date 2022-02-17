@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+	--Dark-cyan: hsl(185, 75%, 39%);
+	--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--Dark-grayish-blue: hsl(227, 10%, 46%);
+	--Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+	font-family: "Kumbh Sans", sans-serif;
+	font-size: 18px;
+	background: var(--Dark-cyan);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	padding: 7em 1em;
+	overflow: hidden;
+}
+
+.top-pattern {
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	left: -12em;
+	top: -8em;
+}
+
+.bottom-pattern {
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	right: -12em;
+	bottom: -8em;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: white;
+	border-radius: 0.8em;
+	position: relative;
+}
+
+.hero-img {
+	max-width: 100%;
+	border-radius: 0.8em 0.8em 0 0;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 0.8px solid hsla(0, 0%, 59%, 0.4);
+}
+
+.avatar {
+	z-index: 1;
+	margin-top: -3em;
+	border: 5px solid white;
+	border-radius: 50%;
+}
+
+h2 {
+	color: var(--Very-dark-desaturated-blue);
+	font-size: 25px;
+}
+
+span {
+	color: var(--Dark-grayish-blue);
+	padding-left: 0.4em;
+	font-weight: 600;
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--Dark-gray);
+	margin-top: -0.5em;
+	margin-bottom: 2em;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 1em 0;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+	padding: 0 1em;
+}
+
+ul li:nth-child(1) {
+	color: var(--Very-dark-desaturated-blue);
+	font-weight: 700;
+}
+
+ul li:nth-child(2) {
+	color: var(--Dark-gray);
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 1em;
+	color: var(--Very-dark-desaturated-blue);
+	font-weight: 700;
+}
+.attribution a {
+	color: var(--Dark-grayish-blue);
+	font-weight: 700;
+}
+
+@media (min-width: 500px) {
+	.card {
+		position: relative;
+	}
+	.top-pattern {
+		width: 100%;
+		z-index: -1;
+		position: absolute;
+		top: -54em;
+		left: -39em;
+	}
+
+	.bottom-pattern {
+		width: 100%;
+		z-index: -1;
+		position: absolute;
+		bottom: -55em;
+		right: -40em;
+	}
+
+	.card {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+}
